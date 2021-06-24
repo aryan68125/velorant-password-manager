@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Valorant Password Manager</string>
+    <string name="floating_button">add</string>
+    <string name="AddBook">Add Book</string>
+    <string name="email_input">Email Address</string>
+    <string name="password_input">Password</string>
+    <string name="pages_input">Number of Pages</string>
+    <string name="add_button">Add</string>
+    <string name="update_button">Update</string>
+    <string name="delete_button">Delete</string>
+    <string name="AddPassword">Add Password</string>
+    <string name="ViewPassword">Details</string>
+    <string name="DevActivity">Developer Information</string>
+</resources>

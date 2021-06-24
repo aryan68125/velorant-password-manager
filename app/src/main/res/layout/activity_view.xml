@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dev_activity"
+    android:padding="10dp"
+    tools:context=".ViewActivity">
+
+    <Button
+        android:id="@+id/Generate_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/generate_button_background"
+        android:padding="10dp"
+        android:text="Generate Password"
+        android:textColor="#FCFCFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Symbols_view_activity" />
+
+    <Button
+        android:id="@+id/Save_Changes_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/generate_button_background"
+        android:padding="10dp"
+        android:text="Save Changes"
+        android:textColor="#FCFCFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Generate_view_activity" />
+
+    <EditText
+        android:id="@+id/email_input_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/background_transparent_black_tint"
+        android:ems="10"
+        android:hint="@string/email_input"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Password_input_view_activity"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/background_transparent_black_tint"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/password_input"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input_view_activity" />
+
+    <SeekBar
+        android:id="@+id/charater_numbers_view_activity"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characters_view_activity" />
+
+    <SeekBar
+        android:id="@+id/numbers_view_activity"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3_view_activity" />
+
+    <SeekBar
+        android:id="@+id/Symbols_view_activity"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5_view_activity" />
+
+    <TextView
+        android:id="@+id/characters_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Number of characters"
+        android:textColor="#FAF9F9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_input_view_activity" />
+
+    <TextView
+        android:id="@+id/textView3_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Number of numbers"
+        android:textColor="#FAF8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charater_numbers_view_activity" />
+
+    <TextView
+        android:id="@+id/textView5_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Number of symbols"
+        android:textColor="#FAF7F7"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numbers_view_activity" />
+
+    <TextView
+        android:id="@+id/textView6_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/characters_view_activity"
+        app:layout_constraintTop_toBottomOf="@+id/Password_input_view_activity" />
+
+    <TextView
+        android:id="@+id/textView7_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView3_view_activity"
+        app:layout_constraintTop_toBottomOf="@+id/charater_numbers_view_activity" />
+
+    <TextView
+        android:id="@+id/textView8_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView5_view_activity"
+        app:layout_constraintTop_toBottomOf="@+id/numbers_view_activity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
