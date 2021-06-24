@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         recylerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 
-    //refreshing the RecylerView in our main activity with new data when mainActivity restarts
+    //refreshing the recylerView in our main activity with new data when mainActivity restarts
     @Override
     protected void onRestart() {
         super.onRestart();
