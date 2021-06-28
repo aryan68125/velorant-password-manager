@@ -17,4 +17,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/progress_scifi_bar_image_1"
+        android:layout_width="193dp"
+        android:layout_height="193dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.3"
+        app:layout_constraintBottom_toTopOf="@+id/SplashprogressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/progress_bar_sci_fi_vi" />
+
+    <ImageView
+        android:id="@+id/progress_scifi_bar_image_2"
+        android:layout_width="193dp"
+        android:layout_height="193dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/SplashprogressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/progress_bar_sci_fi_ii" />
+
+    <ImageView
+        android:id="@+id/progress_scifi_bar_image_3"
+        android:layout_width="193dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="39dp"
+        android:alpha="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/SplashprogressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/progress_bar_sci_fi_vii" />
 </androidx.constraintlayout.widget.ConstraintLayout>

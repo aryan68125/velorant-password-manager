@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/v"
+    android:background="@drawable/velorant_velar_xv"
     tools:context=".DevActivity">
 
     <ListView
