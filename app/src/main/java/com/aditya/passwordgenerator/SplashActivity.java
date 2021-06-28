@@ -15,22 +15,11 @@ import android.widget.ProgressBar;
 public class SplashActivity extends AppCompatActivity {
 
     ProgressBar SplashprogressBar;
-    ImageView progress_scifi_bar_image_1;
-    ImageView progress_scifi_bar_image_2;
-    ImageView progress_scifi_bar_image_3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        progress_scifi_bar_image_1 = findViewById(R.id.progress_scifi_bar_image_1);
-        progress_scifi_bar_image_1.animate().rotation(1000).setDuration(5000);
-
-        progress_scifi_bar_image_2 = findViewById(R.id.progress_scifi_bar_image_2);
-
-        progress_scifi_bar_image_3 = findViewById(R.id.progress_scifi_bar_image_3);
-        progress_scifi_bar_image_3.animate().rotation(-1000).setDuration(5000);
-
         //hide the actionbar in splash activity
         getSupportActionBar().hide();
 
@@ -45,6 +34,7 @@ public class SplashActivity extends AppCompatActivity {
 
         //animating our progress bar
         ObjectAnimator progressAnimator = ObjectAnimator.ofInt(SplashprogressBar, "progress", 0, 100);
+        //setmilli seconds for optimization 8400
         progressAnimator.setDuration(5000);
         progressAnimator.setInterpolator(new LinearInterpolator());
         progressAnimator.start();
