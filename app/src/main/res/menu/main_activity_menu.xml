@@ -8,7 +8,7 @@
         android:title="Delete_all" />
     <item
         android:id="@+id/DevInfo"
-        android:icon="@drawable/devinfo"
+        android:icon="@drawable/developer"
         app:showAsAction="ifRoom"
         android:title="Dev_info" />
 </menu>
