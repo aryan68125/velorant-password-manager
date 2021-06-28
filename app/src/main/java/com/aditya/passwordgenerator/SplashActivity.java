@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
         //animating our progress bar
         ObjectAnimator progressAnimator = ObjectAnimator.ofInt(SplashprogressBar, "progress", 0, 100);
         //setmilli seconds for optimization 8400
-        progressAnimator.setDuration(5000);
+        progressAnimator.setDuration(8600);
         progressAnimator.setInterpolator(new LinearInterpolator());
         progressAnimator.start();
         //the code below will open the main Activity after 2 seconds after the splash screen is deployed
@@ -56,7 +56,7 @@ public class SplashActivity extends AppCompatActivity {
                 //adding animation when opening new activity
                 overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
             }
-        },5000);
+        },8600);
 
 
     }
