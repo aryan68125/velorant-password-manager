@@ -162,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
     String deleted_password_id=null;
     String Deleted_email_address=null;
     String password_String = null;
+    int position;
 
     //for swiping operation always put drag Dirs - 0
     //Enable left swipe to edit
@@ -178,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
 
             //getting the position of the row of the recyclerView
-            int position = viewHolder.getAdapterPosition();
+            position = viewHolder.getAdapterPosition();
 
             //this method is used for handeling the swipe
             switch(direction)
@@ -233,7 +234,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //do nothing if no is pressed by the user in the delete dialogue box
-                recreate();
+                //recreate(); instead of using recreate use the code below to improve the user ui experience
+                password_id.add(position,deleted_password_id);
+                email_address.add(position,Deleted_email_address);
+                password.add(position,password_String);
+                customAdapter.notifyItemInserted(position);
+                recylerView.scrollToPosition(position);
             }
         });
         builder.create().show();
