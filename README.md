@@ -3,6 +3,8 @@ This application is a randome password generater.
 It stores your email id and randomely generated passwords in the database so that you can copy and use the password later
 there is a dedicated copy button given so you don't have to go through the hassel of selecting the password and copying it 
 
+Note: I used SQLite database in this application
+
 here are some preview pictures
 
 Splash screen:
