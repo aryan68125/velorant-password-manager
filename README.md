@@ -1,7 +1,7 @@
 # velorant-password-manager
 This application is a random password generator. It stores your email id and randomly generated passwords in the database so that you can copy and use the password later. 
 
-Note: I used SQLite database in this application
+
 
 here are some preview pictures
 
