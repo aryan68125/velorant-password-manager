@@ -1,7 +1,7 @@
 # velorant-password-manager
 This application is a random password generator. It stores your email id and randomly generated passwords in the database so that you can copy and use the password later. 
 
-
+You can download the apk of this project from the releases section.
 
 here are some preview pictures
 
